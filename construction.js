@@ -1,14 +1,14 @@
 function construct (name){
-    
-    let user = {
-        name : 'Irene',
+    let person  = {
+        name : name,
         material : 'human',
         assemble : true,
-        duration : 1000
+        duration :1000
+    }
 
-        
-    };
-    return user;
+    return person;
+    
 }
-const result = construct('Irene');
-console.log('name is : '+ result.name);
+const somePerson = construct('Kevin');
+console.log('name is: ' + somePerson.name);
+console.log('duration is: ' + somePerson.duration);
